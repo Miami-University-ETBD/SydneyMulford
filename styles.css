@@ -1,0 +1,137 @@
+body {
+    background-color: #000000;
+  }
+
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "bebas-kai", sans-serif;
+   
+  }
+    
+  h2 {
+    color: #ffffff;
+    font-family: "bebas-kai", sans-serif;
+    text-align:left;
+    }
+
+p {
+        font-family: "bebas-kai", sans-serif;
+        color: #808080;
+        font-size: 20px;
+        text-align:left;
+    }
+
+a:link, a:visited {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "bebas-kai", sans-serif;
+        font-size: 15px;
+      }
+      
+      li {
+        color: #FFFFFF;
+      }
+      
+a:hover, a:active {
+        background-color: #808080;
+      }
+
+
+ul {
+        list-style-type: circle;
+      }
+li{
+    font-size: 20px;
+        color: #808080;
+}
+
+.header {
+        padding: 5px;
+        text-align: center;
+        background: #000000;
+        color: #ffffff;
+        font-size: 30px;
+      }
+
+header {
+  padding: 5px;
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+
+.content {padding:20px;}
+
+table {
+        font-family: "bebas-kai", sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        color: #808080;
+        font-size: 22px;
+      }
+      
+td, th {
+        border: 1px solid #ffffff;
+        text-align: left;
+        padding: 8px;
+      }
+        
+th{
+              height: 50px;
+                text-align: center;
+              text-transform: uppercase;
+              color: #ffffff;
+            }
+      
+tr:nth-child(even){
+              background-color: #000000;}
+              tr:nth-child(odd){
+        background-color: #000000;
+      }
+
+aside {
+        width: 50%;
+        margin-left: 3rem;
+        padding-left: .5rem;
+        float: right;
+        box-shadow: inset 5px 0 5px -5px #c4c4c4;
+        font-style: italic;
+        color: #808080;
+      }
+      
+      aside > p {
+        margin: 0.5rem;
+      }
+
+
+
+.footer {
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+       padding: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+     }
+
+
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
