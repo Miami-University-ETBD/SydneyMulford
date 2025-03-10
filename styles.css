@@ -135,3 +135,19 @@ footer {
   text-align: center;
 }
 
+
+.navbar {
+  background-color: #000000;
+  padding: 15px 15px;
+  color: #ffffff;
+}
+
+.navbar:hover {
+  background-color: #c4c4c4;
+}
+
+
+img{
+  width: 70%
+}
+
