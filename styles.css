@@ -1,30 +1,30 @@
 body {
-    background-color: #000000;
+    background-color: #f0e7bd;
   }
 
 h1 {
-    color: #ffffff;
+    color: #8ccce2;
     font-size: 40px;
     font-family: "bebas-kai", sans-serif;
    
   }
     
   h2 {
-    color: #ffffff;
+    color: #8ccce2;
     font-family: "bebas-kai", sans-serif;
     text-align:left;
     }
 
 p {
         font-family: "bebas-kai", sans-serif;
-        color: #808080;
+        color: #caa86b;
         font-size: 20px;
         text-align:left;
     }
 
 a:link, a:visited {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: #9bcc71;
+        color: #ffffff;
         padding: 15px 25px;
         text-align: center;
         text-decoration: none;
@@ -34,11 +34,11 @@ a:link, a:visited {
       }
       
       li {
-        color: #FFFFFF;
+        color: #caa86b;
       }
       
 a:hover, a:active {
-        background-color: #808080;
+        background-color: #b9db9b;
       }
 
 
@@ -47,14 +47,14 @@ ul {
       }
 li{
     font-size: 20px;
-        color: #808080;
+        color: #caa86b;
 }
 
 .header {
         padding: 5px;
         text-align: center;
-        background: #000000;
-        color: #ffffff;
+        background-color: #e6d891;
+        color: #8ccce2;
         font-size: 30px;
       }
 
@@ -73,7 +73,7 @@ table {
         font-family: "bebas-kai", sans-serif;
         border-collapse: collapse;
         width: 50%;
-        color: #808080;
+        color: #ffffff;
         font-size: 22px;
       }
       
@@ -91,9 +91,9 @@ th{
             }
       
 tr:nth-child(even){
-              background-color: #000000;}
+              background-color: #caa86b;}
               tr:nth-child(odd){
-        background-color: #000000;
+        background-color: #caa86b;
       }
 
 aside {
@@ -103,7 +103,7 @@ aside {
         float: right;
         box-shadow: inset 5px 0 5px -5px #c4c4c4;
         font-style: italic;
-        color: #808080;
+        color: #caa86b;
       }
       
       aside > p {
@@ -118,8 +118,8 @@ aside {
         bottom: 0;
         width: 100%;
        padding: 10px;
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #e6d891;
+        color: #caa86b;
         text-align: center;
      }
 
@@ -130,8 +130,12 @@ footer {
   bottom: 0;
   width: 100%;
  padding: 10px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #e6d891;
+  color: #caa86b;
   text-align: center;
 }
 
+
+img {
+  width: 70%
+}
