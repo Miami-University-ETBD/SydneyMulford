@@ -44,6 +44,39 @@
         to help you find your new best friend. Come check out what we have <br>available! </p>  
    </div>
 
+   <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="images/adopted1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="images/adopted2.jpeg"></a>
+    <a class="carousel-item" href="#three!"><img src="images/adopted3.webp"></a>
+    <a class="carousel-item" href="#four!"><img src="images/adopted4.jpg"></a>
+</div>
+
+   <div id="radio-section" class="section container">
+    <h2>Select Your Dream Pet</h2>
+    <form>
+        <p>
+            <label>
+                <input name="pastry" type="radio" value="Dog" onclick="displayPastry()"/>
+                <span>Dog</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="pastry" type="radio" value="Cat" onclick="displayPastry()"/>
+                <span>Cat</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="pastry" type="radio" value="Other" onclick="displayPastry()"/>
+                <span>Other</span>
+            </label>
+        </p>
+    </form>
+    <div id="pastry-response"></div>
+</div>
+
+
 
    <!-- Buttons -->
    <div class="container">
@@ -184,6 +217,31 @@
         modal.open();
     }
 </script>
+
+<!-- Email Feedback Section -->
+<div id="feedback-section" class="section container">
+    <h2>Subscribe for Updates about our Pets</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Check Your email-response</h4>
+    <p id="modal-content-text"></p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+      >Close</a
+    >
+  </div>
+</div>
+
 
 </body>
 </html>
