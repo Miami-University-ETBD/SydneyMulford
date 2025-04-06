@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        body {
+            background-color: #ffebee;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        h4 {
+            color: #ba68c8;
+            text-align: center;
+        }
+        .card .card-image img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        h2 {
+            color: #ba68c8;
+            text-align: center;
+        }
+    </style> 
+
+</head>
+
+<nav>
+    <div class="nav-wrapper teal">
+        <nav class="header-bg">
+     <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="adoptable-pets.html">Adoptable Pets</a></li>
+       <li> <a href="about-us.html">About Us</a></li>
+      <li><a href="materialize.html">Materialize</a></li>
+      <li><a href="jsmaterialize2.html">JS Materialize</a></li>
+               </ul>
+            </div>
+        </div>
+        </nav>
+
+  <body>
+
+    <h4>Welcome to Paws for Paws!</h4>
+    <p>We are so glad you joined us. Paws for Paws aims to find homes for any <br> and all pets. We have all sorts of breeds and types of pets. We also <br>have all ages from young to old.We have a lovely team that is ready<br>
+        to help you find your new best friend. Come check out what we have <br>available! </p> 
+      
+      <div class="carousel">
+  <a class="carousel-item" href="#one!"><img src="images/adopted1.jpg"></a>
+  <a class="carousel-item" href="#two!"><img src="images/adopted2.jpeg"></a>
+  <a class="carousel-item" href="#three!"><img src="images/adopted3.webp"></a>
+  <a class="carousel-item" href="#four!"><img src="images/adopted4.jpg"></a>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems);
+      });
+  </script>
+
+<div id="radio-section" class="section container">
+    <h2>Select Your Dream Pet</h2>
+    <form>
+        <p>
+            <label>
+                <input name="pastry" type="radio" value="Dog" onclick="displayPastry()"/>
+                <span>Dog</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="pastry" type="radio" value="Cat" onclick="displayPastry()"/>
+                <span>Cat</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="pastry" type="radio" value="Other" onclick="displayPastry()"/>
+                <span>Other</span>
+            </label>
+        </p>
+    </form>
+    <div id="pastry-response"></div>
+</div>
+
+<h4>A few of our adoptable pets:</h4>
+
+    <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>Sir Barks-a-lot</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Kit-Kat</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Bun Jovi</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+
+      <script>document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, options);
+      });
+      </script>
+
+      <div id="feedback-section" class="section container">
+        <h2>Subscribe for Updates about our Pets</h2>
+        <form onsubmit="submitEmail(event)">
+            <div class="input-field">
+                <input id="email" type="email" required>
+                <label for="email">Email</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+        </form>
+        <div id="email-response"></div>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Check Your email-response</h4>
+        <p id="modal-content-text"></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Close</a
+        >
+      </div>
+    </div>
+
+    <!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems);
+    });
+</script>
+
+<script>
+ // Initialize modal
+ document.addEventListener('DOMContentLoaded', function() {
+     var elems = document.querySelectorAll('.modal');
+     var instances = M.Modal.init(elems);
+ });
+
+
+ // Function to display selected pastry
+ function displayPastry() {
+     const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+     document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+ }
+ // Function to handle email subscription form submission
+ function submitEmail(event) {
+     event.preventDefault();
+     const email = document.getElementById('email').value;
+     document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+     document.getElementById('email').value = ''; // Clear the input
+
+
+     // Display modal
+     const modalText = document.getElementById('modal-content-text');
+     modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+     const modal = M.Modal.getInstance(document.getElementById('modal1'));
+     modal.open();
+ }
+</script>
+
+
+  </body>
+</html
