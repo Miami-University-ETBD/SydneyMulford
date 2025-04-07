@@ -35,6 +35,10 @@
             color: #ba68c8;
             text-align: center;
         }
+
+        img{
+          width: 50%;
+        }
     </style> 
 
 </head>
@@ -100,26 +104,26 @@
 
 <h4>A few of our adoptable pets:</h4>
 
+<script>document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems);
+});
+</script>
+
     <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="material-icons">filter_drama</i>Sir Barks-a-lot</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><i class="material-icons">pets</i>Sir Barks-a-lot</div>
+          <div class="collapsible-body"><span><img src= "images/goldenretriever.jpg"><br>Sir Barks-a-lot is a sweet 3-year-old golden retriever. He loves to play fetch and snuggle with you. He is guarenteed to become your best friend.</span></div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Kit-Kat</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><i class="material-icons">pets</i>Kit-Kat</div>
+          <div class="collapsible-body"><span><img src= "images/kitkat.jpg"><br>KitKat is a sweet 7-year-old persian cat. She loves your attention and spending time with you.</span></div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">whatshot</i>Bun Jovi</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><i class="material-icons">pets</i>Bun Jovi</div>
+          <div class="collapsible-body"><span><img src= "images/bonjovi.jpg"><br>Bun Jovi is adorable american fuxxy lops. He is always ready to eat and prefers to be the only animal in your home.</span></div>
         </li>
       </ul>
-
-      <script>document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.collapsible');
-        var instances = M.Collapsible.init(elems, options);
-      });
-      </script>
 
       <div id="feedback-section" class="section container">
         <h2>Subscribe for Updates about our Pets</h2>
