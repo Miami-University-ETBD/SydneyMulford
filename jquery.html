@@ -7,16 +7,70 @@
 <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paws for Paws</title>
 
-<script>
+<!-- Script Number 1 -->
+<script> 
     $(document).ready(function(){
-        $("p").hide();
-        $("img").hide();
-        $("button").click(function(){
-        $("p").toggle();
-        $("img").toggle();
+      $("#button3").click(function(){
+        $("h2").fadeToggle();
       });
     });
     </script>
+
+<script> 
+    $(document).ready(function(){
+        $("h3").hide();
+      $("#button3").click(function(){
+        $("h3").fadeToggle();
+      });
+    });
+    </script>
+
+<!-- Script Number 2 -->
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#img4").slideDown("slow");
+      });
+    });
+    </script>
+    <style> 
+    #img4, #flip {
+      padding: 5px;
+      text-align: center;
+      font-family: "bebas-kai", sans-serif;
+      background-color: #8ccce2;
+      border: solid 1px #aedbea;
+    }
+    
+    #img4 {
+      padding: 50px;
+      display: none;
+    }
+    </style>
+
+<!-- Script Number 3 -->
+<script>
+    $(document).ready(function(){
+        $("#p1").hide();
+        $("#img1").hide();
+        $("#button1").click(function(){
+        $("#p1").toggle();
+        $("#img1").toggle();
+      });
+    });
+    </script>
+
+<script>
+    $(document).ready(function(){
+        $("#p2").hide();
+        $("#img2").hide();
+        $("#button2").click(function(){
+        $("#p2").toggle();
+        $("#img2").toggle();
+      });
+    });
+    </script>
+
 
 </head>
 
@@ -38,23 +92,65 @@
     
     </header>
 
-    <h1 style="text-align: center">Welcome to Paws for Paws</h1>
-    <h2 style="text-align: center">Read our love stories!</h2>
+    <!-- Script Number 1 -->
+    <section>
+    <h2 style="text-align: center">Welcome to Paws for Paws</h1>
+    <h3 style="text-align: center">Read our love stories!</h2>
+    <button id="button3" style="padding: 7px;" style="background-color: #8ccce2;">Click Me!</button>
+    </section>
+        <br>
 
-    <button>Click here to view Lisa's Love Story</button>
+        <p>At Paws for Paws we always strive to have the best quality service to find you<br>
+        your dream pet. Our goal is to find our pets their forever home, so we want to<br>
+        match you and your pet perfectly. With our variety of pets, and their amazing<br>
+        qualities, you are sure to find the perfect pet for you! Read a few of our love<br>
+        stories below!</p>
 
-            <p>"Paws for Paws introduced me to Brutus, something I will forever be greatful for. <br> 
+        <br>
+
+    <!-- Script Number 2 -->
+    <section>
+        <div id="flip">Want to find your forever pet? Click me!</div>
+        <img id="img4" style="width: 20%;" src="images/adoptme.jpg" alt="Adopt me photo">
+    </section>
+
+        <br>
+        <br>
+
+    <!-- Script Number 3 -->
+    <section>
+        <button id="button1" style="padding: 10px">Click here to read Lisa's Love Story</button>
+
+            <p id="p1">"Paws for Paws introduced me to Brutus, something I will forever be greatful for. <br> 
                 Brutus has made my life so much better and he always lights up my day. He is the <br> 
                 best addition to my family; the kids love him. He is always ready to play but he <br> 
                 also understands when to calm down."</p>
-                <img src="images/goldenretriever.jpg" alt="photo of Sir Barksalot">
+                <img id="img1" style="width: 50%;" src="images/goldenretriever.jpg" alt="photo of Sir Barksalot">
+
+
+            <br>
+            <br>
+            <br>
                 
+       
+      <button id="button2" style="padding: 10px">Click here to read Fred's Love Story</button>
 
-      <button>Click here to view Fred's Love Story</button>
-
-      <p>"Because of Paws for Paws, KitKat has made my life so much better. Paws for Paws's<br>
+      <p id="p2">Because of Paws for Paws, KitKat has made my life so much better. Paws for Paws's<br>
       amazing service and attitude matched KitKat and I perfectly. KitKit is a laid-back<br>
       cat who perfectly matches my lifestyle as a retiree.</p>
-          <img src="images/kitkat.jpg" alt="photo of KitKat">
-    <body>
+          <img id="img2" style="width: 50%;" src="images/kitkat.jpg" alt="photo of KitKat">
+        
+    </section>
+    
+
+        <footer>
+            <p style="text-align:center;"><u><b><i>Paws for Paws</i></b></u><br>
+            <i>123-456-7890</i><br>
+            123 Main Street<br>
+            Oxford, Ohio 45056<br></p>
+          </footer>
+          
+          </body>
+        
+          </html>
     
